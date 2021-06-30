@@ -98,29 +98,70 @@
 //     errorText.textContent = "Something went wrong"
 // }
 
-let num1 = 8
-let num2 = 2
-document.getElementById('num1-el').textContent = num1
-document.getElementById('num2-el').textContent = num2
-let sumSpan = document.getElementById('sum-el')
+//number programming
+// let num1 = 8
+// let num2 = 2
+// document.getElementById('num1-el').textContent = num1
+// document.getElementById('num2-el').textContent = num2
+// let sumSpan = document.getElementById('sum-el')
 
-function addHandler () {
-    let sum = num1 + num2
-    sumSpan.textContent += sum
-    console.log(sum)
-}
+// function addHandler () {
+//     let sum = num1 + num2
+//     sumSpan.textContent += sum
+//     console.log(sum)
+// }
 
-function subtract () {
-    let subNum = num1 - num2
-    sumSpan.textContent = "subtract" + " "+ "=" + " " + subNum
-}
+// function subtract () {
+//     let subNum = num1 - num2
+//     sumSpan.textContent = "subtract" + " "+ "=" + " " + subNum
+// }
 
-function divide () {
-    let divideNum = num1 / num2
-    sumSpan.textContent = "divide" + " "+ "=" + " " + divideNum
-}
+// function divide () {
+//     let divideNum = num1 / num2
+//     sumSpan.textContent = "divide" + " "+ "=" + " " + divideNum
+// }
 
-function multiply () {
-    let multiplyNum = num1 * num2
-    sumSpan.textContent = "dmultiply" + " "+ "=" + " " + multiplyNum
+// function multiply () {
+//     let multiplyNum = num1 * num2
+//     sumSpan.textContent = "dmultiply" + " "+ "=" + " " + multiplyNum
+// }
+
+//조건문 연습하기
+// let firstCard = 13
+// let secondCard = 10
+// let sum = firstCard + secondCard
+
+// console.log(sum)
+
+// if ( sum < 21  ) {
+//     console.log("you lost")
+// } else if ( sum === 21) {
+//     console.log("you win")
+// } else {
+//     console.log("Try again")
+// }
+
+//마지막 else에는 sum이 21보다 작거나 21과 같은 경우를
+//제외한 모든 경우를 가정한다
+
+//두번째 if문 연습
+
+// let age = 21
+
+// if ( age <= 21 ) {
+//     console.log("You can not enter the club!")
+// } else {
+//     console.log("Welcome!")
+// }
+
+//세번째 if문 연습
+
+let age = 100
+
+if ( age < 100 ) {
+    console.log("Not elegible")
+} else if ( age === 100) {
+    console.log("Here is your birthday card from the King!")
+} else {
+    console.log("Not elegible, you have already gotten one")
 }
