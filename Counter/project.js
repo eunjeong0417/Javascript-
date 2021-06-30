@@ -12,15 +12,20 @@ btns.forEach(function(btn) {
         const btnClass = e.currentTarget.classList;
         if(btnClass.contains("decrease")) {
             count = count - 1
-            span.textContent = count
         }
         else if (btnClass.contains("reset")) {
             count = 0
-            span.textContent = count
         } else {
             count = count + 1
-            span.textContent = count
         }
+        if ( count > 0) {
+            span.style.color = "green"
+        } else if ( count === 0 ) {
+            span.style.color = "navy"
+        } else {
+            span.style.color = "orange"
+        }
+        span.textContent = count
     })
 })
 
