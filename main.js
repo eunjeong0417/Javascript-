@@ -127,20 +127,26 @@
 // }
 
 //조건문 연습하기
-// let firstCard = 13
-// let secondCard = 10
-// let sum = firstCard + secondCard
+let firstCard = 10
+let secondCard = 13
+let sum = firstCard + secondCard
+let hasBlackJack = false
+let isAlive = true
+let message = ""
 
-// console.log(sum)
 
-// if ( sum < 21  ) {
-//     console.log("you lost")
-// } else if ( sum === 21) {
-//     console.log("you win")
-// } else {
-//     console.log("Try again")
-// }
+if ( sum <= 20  ) {
+    message = "Do you want to draw a new card?"
+} else if ( sum === 21) {
+    message = "you've got Blackjack!"
+    hasBlackJack = true
+} else {
+    console.log("You're out of the game!")
+    isAlive = false
+    message = "we're logging out"
+}
 
+console.log(message)
 //마지막 else에는 sum이 21보다 작거나 21과 같은 경우를
 //제외한 모든 경우를 가정한다
 
@@ -156,12 +162,13 @@
 
 //세번째 if문 연습
 
-let age = 100
+// let age = 100
 
-if ( age < 100 ) {
-    console.log("Not elegible")
-} else if ( age === 100) {
-    console.log("Here is your birthday card from the King!")
-} else {
-    console.log("Not elegible, you have already gotten one")
-}
+// if ( age < 100 ) {
+//     console.log("Not elegible")
+// } else if ( age === 100) {
+//     console.log("Here is your birthday card from the King!")
+// } else {
+//     console.log("Not elegible, you have already gotten one")
+// }
+

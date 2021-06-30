@@ -1,4 +1,4 @@
-body {
+/* body {
   background-image: url("station.jpg");
   background-size: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -44,4 +44,8 @@ button {
 
 #btn {
   background-color: red;
+} */
+
+h1 {
+  color: goldenrod;
 }
