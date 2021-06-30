@@ -92,8 +92,35 @@
 
 //error message
 
-let errorText = document.getElementById('error')
+// let errorText = document.getElementById('error')
 
-function errorHandler () {
-    errorText.textContent = "Something went wrong"
+// function errorHandler () {
+//     errorText.textContent = "Something went wrong"
+// }
+
+let num1 = 8
+let num2 = 2
+document.getElementById('num1-el').textContent = num1
+document.getElementById('num2-el').textContent = num2
+let sumSpan = document.getElementById('sum-el')
+
+function addHandler () {
+    let sum = num1 + num2
+    sumSpan.textContent += sum
+    console.log(sum)
+}
+
+function subtract () {
+    let subNum = num1 - num2
+    sumSpan.textContent = "subtract" + " "+ "=" + " " + subNum
+}
+
+function divide () {
+    let divideNum = num1 / num2
+    sumSpan.textContent = "divide" + " "+ "=" + " " + divideNum
+}
+
+function multiply () {
+    let multiplyNum = num1 * num2
+    sumSpan.textContent = "dmultiply" + " "+ "=" + " " + multiplyNum
 }
