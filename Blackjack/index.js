@@ -204,3 +204,17 @@ function renderGame () {
 //     console.log("check out this new film!")
 // }
 
+//object
+
+// let airbnb = {
+//     expensive: false,
+//     pakageTitle: "Have a nice trip",
+//     price: 200,
+//     items:[
+//         "lotion","notebook","socks"
+//     ]
+// }
+
+// console.log(airbnb.expensive)
+// console.log(airbnb.price)
+
