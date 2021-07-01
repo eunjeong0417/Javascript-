@@ -1,0 +1,47 @@
+body {
+  font-family: "Trebuchet MS";
+  background-color: rgb(12, 94, 53);
+  color: white;
+}
+
+.body-container {
+  text-align: center;
+  margin: 5em;
+}
+
+h1 {
+  color: goldenrod;
+  font-size: 3em;
+}
+
+span {
+  font-size: 2em;
+}
+
+#message-el {
+  font-size: 1.5em;
+  margin-top: 1em;
+  font-style: italic;
+}
+
+#message-card {
+  margin-bottom: 0.5em;
+}
+
+#startBtn {
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #016f32;
+  border-radius: 5px;
+  height: 3em;
+  width: 20em;
+  margin-top: 1em;
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+#startBtn:hover {
+  background-color: rgb(196, 141, 4);
+  color: #0fb359;
+}
