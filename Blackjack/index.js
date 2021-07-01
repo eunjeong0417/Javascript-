@@ -11,7 +11,16 @@ let isAlive = false
 //게임에 들어가기 전 상태는 false로 설정
 let message = ""
 console.log(cards)
+let playerEl = document.getElementById('player-el')
 
+//player object
+let player = {
+    title: "Per",
+    chips: 100
+}
+
+playerEl.textContent = player.title + " :" + " $" + player.chips 
+ 
 //1에서 13까지의 숫자를 랜덤으로 가져오기
 //random 으로 가져온 숫자가 10보다 크면 10으로 리턴
 //random으로 가져온 숫자가 1이면 11로 리턴한다
@@ -26,13 +35,15 @@ function getRandomCard () {
     }
 }
 
-
 function newCard () {
+    if ( isAlive === true && hasBlackJack === false) {
     let card = getRandomCard ()
     sum += card
     cards.push(card)
     renderGame()
+  }
 }
+
 
 btnClicked.addEventListener('click', startGame)
 
@@ -51,9 +62,11 @@ function startGame () {
 function renderGame () {
 
         if ( sum <= 20  ) {
+            isAlive = true
             message = "Do you want to draw a new card?"
         } else if ( sum === 21) {
             message = "you've got Blackjack!"
+            isAlive = true
             hasBlackJack = true
         } else {
             console.log("You're out of the game!")
@@ -164,3 +177,30 @@ function renderGame () {
 //     return randomNumber
 // }
 // console.log(rollDice ())
+
+//논리연산자
+//&&
+// let hasSolvedChallenge = false
+// let hasHintsLeft = false
+
+// if ( hasSolvedChallenge === false && hasHintsLeft === false) {
+//     showSolution()
+// }
+
+// function showSolution() {
+//     console.log("Showing the solution...")
+// }
+
+//논리연산자||
+
+// let likesDocumentaries = true
+// let likesStartups = false
+
+// if( likesDocumentaries === true || likesStartups === true) {
+//     recommendMovie()
+// }
+
+// function recommendMovie() {
+//     console.log("check out this new film!")
+// }
+

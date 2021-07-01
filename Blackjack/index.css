@@ -47,3 +47,8 @@ span {
   background-color: rgb(224, 173, 43);
   color: #0fb359;
 }
+
+#player-el {
+  font-size: 20px;
+  font-weight: 600;
+}
