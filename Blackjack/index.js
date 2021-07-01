@@ -32,14 +32,16 @@ function getRandomCard () {
         return 11
     } else {
         return randomNum 
-    }
+    } //두가지 경우를 제외한 나머지는 else
 }
 
 function newCard () {
     if ( isAlive === true && hasBlackJack === false) {
+//isAlive와 hasBlackJack이 해당 조건에 해당될때만 실행한다
     let card = getRandomCard ()
     sum += card
     cards.push(card)
+//기존 card 배열에 push해서 추가한다
     renderGame()
   }
 }
@@ -82,139 +84,173 @@ function renderGame () {
         messageEl.textContent = message
         sumEl.textContent = "Sum:"+" "+ sum
 }
-// // +=을 쓰면 기존 텍스트에 덧붙여진다 따라서 새로운
-// // text를 반환하도록 만드려면 = 만 사용한다
+// // // +=을 쓰면 기존 텍스트에 덧붙여진다 따라서 새로운
+// // // text를 반환하도록 만드려면 = 만 사용한다
 
 
-// //Array 만들기
+// // //Array 만들기
 
-// // let featuredPosts = [
-// //     "Check my netflix",
-// //     "my project",
-// //     "my portFolio"
-// // ]
+// // // let featuredPosts = [
+// // //     "Check my netflix",
+// // //     "my project",
+// // //     "my portFolio"
+// // // ]
 
-// // console.log(featuredPosts.length)
+// // // console.log(featuredPosts.length)
 
-// // let cards = [4, 7]
+// // // let cards = [4, 7]
 
-// // //배열에 추가할때는 push 사용
-// // cards.push(6)
-// // console.log(cards)
+// // // //배열에 추가할때는 push 사용
+// // // cards.push(6)
+// // // console.log(cards)
 
-// // let messages = [
-// //     "hello",
-// //     "nice to meet you",
-// //     "thank you"
-// // ]
+// // // let messages = [
+// // //     "hello",
+// // //     "nice to meet you",
+// // //     "thank you"
+// // // ]
 
-// // let newMessage = "All good"
+// // // let newMessage = "All good"
 
-// // // messages.push(newMessage)
+// // // // messages.push(newMessage)
+// // // // console.log(messages)
+
+// // // //pop을 사용하면 배열의 마지막 항목 삭제
+// // // messages.pop()
 // // // console.log(messages)
 
-// // //pop을 사용하면 배열의 마지막 항목 삭제
-// // messages.pop()
-// // console.log(messages)
+// // //for
 
-// //for
+// // // for (let count = 10; count < 21; count += 1) {
+// // //     console.log(count)
+// // // }
 
-// // for (let count = 10; count < 21; count += 1) {
-// //     console.log(count)
+// // // for (let i = 10; i < 101; i += 10 ) {
+// // //     console.log(i)
+// // // }
+
+// // // let cards = [7, 3, 4]
+
+// // // for (i = 0;  i < cards.length; i++ ) {
+// // //     console.log(cards[i])
+// // // }
+
+// // // let sentence = ["hello", "my", "name", "is", "eunjeong"]
+// // // let greetingEl = document.getElementById('greeting-el')
+
+// // // for ( let i = 0;  i < sentence.length; i ++) {
+// // //     greetingEl.textContent +=" " + sentence[i] + " "
+// // // }
+
+// // // let player1Time = 102
+// // // let player2Time = 107
+
+// // // function totalRace () {
+// // //     if ( player1Time < player2Time) {
+// // //         return player2Time
+// // //     } else if ( player1Time > player2Time) {
+// // //         return player1Time
+// // //     } else {
+// // //         return player1Time
+// // //     }
+// // // } 
+
+// // // let newTotalValue = totalRace()
+// // // console.log(newTotalValue)
+
+// //randomNumber
+
+// // let randomNumber = Math.random() * 6
+
+// // console.log(randomNumber)
+
+// //Flooring the numbe with Math.random()
+// //floor는 소수점 아래 숫자를 제거해준다
+
+// // let floorNumber = Math.floor(5.85632)
+// // console.log(floorNumber)
+
+// //1에서 6 사이의 랜덤 숫자 만들기
+// // let randomNumber = Math.floor(Math.random() * 6) + 2
+// // console.log(randomNumber)
+
+// // function rollDice () {
+// //     let randomNumber = Math.floor(Math.random() * 6 + 1 )
+// //     return randomNumber
+// // }
+// // console.log(rollDice ())
+
+// //논리연산자
+// //&&
+// // let hasSolvedChallenge = false
+// // let hasHintsLeft = false
+
+// // if ( hasSolvedChallenge === false && hasHintsLeft === false) {
+// //     showSolution()
 // // }
 
-// // for (let i = 10; i < 101; i += 10 ) {
-// //     console.log(i)
+// // function showSolution() {
+// //     console.log("Showing the solution...")
 // // }
 
-// // let cards = [7, 3, 4]
+// //논리연산자||
 
-// // for (i = 0;  i < cards.length; i++ ) {
-// //     console.log(cards[i])
+// // let likesDocumentaries = true
+// // let likesStartups = false
+
+// // if( likesDocumentaries === true || likesStartups === true) {
+// //     recommendMovie()
 // // }
 
-// // let sentence = ["hello", "my", "name", "is", "eunjeong"]
-// // let greetingEl = document.getElementById('greeting-el')
-
-// // for ( let i = 0;  i < sentence.length; i ++) {
-// //     greetingEl.textContent +=" " + sentence[i] + " "
+// // function recommendMovie() {
+// //     console.log("check out this new film!")
 // // }
 
-// // let player1Time = 102
-// // let player2Time = 107
+// //object
 
-// // function totalRace () {
-// //     if ( player1Time < player2Time) {
-// //         return player2Time
-// //     } else if ( player1Time > player2Time) {
-// //         return player1Time
-// //     } else {
-// //         return player1Time
-// //     }
-// // } 
+// // let airbnb = {
+// //     expensive: false,
+// //     pakageTitle: "Have a nice trip",
+// //     price: 200,
+// //     items:[
+// //         "lotion","notebook","socks"
+// //     ]
+// // }
 
-// // let newTotalValue = totalRace()
-// // console.log(newTotalValue)
+// // console.log(airbnb.expensive)
+// // console.log(airbnb.price)
 
-//randomNumber
 
-// let randomNumber = Math.random() * 6
+//object practice
 
-// console.log(randomNumber)
-
-//Flooring the numbe with Math.random()
-//floor는 소수점 아래 숫자를 제거해준다
-
-// let floorNumber = Math.floor(5.85632)
-// console.log(floorNumber)
-
-//1에서 6 사이의 랜덤 숫자 만들기
-// let randomNumber = Math.floor(Math.random() * 6) + 2
-// console.log(randomNumber)
-
-// function rollDice () {
-//     let randomNumber = Math.floor(Math.random() * 6 + 1 )
-//     return randomNumber
-// }
-// console.log(rollDice ())
-
-//논리연산자
-//&&
-// let hasSolvedChallenge = false
-// let hasHintsLeft = false
-
-// if ( hasSolvedChallenge === false && hasHintsLeft === false) {
-//     showSolution()
+// let person = {
+//     name:"james",
+//     age: 17,
+//     country: "Norway"
 // }
 
-// function showSolution() {
-//     console.log("Showing the solution...")
+// function logData () {
+//     console.log(person.name +" is" +" "+ person.age +" "+ "years old and lives in "+ person.country)
 // }
 
-//논리연산자||
+// logData()
 
-// let likesDocumentaries = true
-// let likesStartups = false
+//if문 연습
+// && 조건문 활용
+// let age = 66
 
-// if( likesDocumentaries === true || likesStartups === true) {
-//     recommendMovie()
+// function ageDiscount () {
+//     if( age < 6 ) {    //5세까지
+//         console.log("free")
+//     } else if ( age < 18 ) { // 6-17세까지
+//         console.log("child discount")
+//     } else if ( age < 27 ) { //18-26세까지
+//         console.log("student discount")
+//     } else if (  age < 66) { // 27-65세까지
+//         console.log("full price")
+//     } else { //else에는 나머지에 해당하는 조건
+//         console.log("senior citizen discount")
+//     }
 // }
 
-// function recommendMovie() {
-//     console.log("check out this new film!")
-// }
-
-//object
-
-// let airbnb = {
-//     expensive: false,
-//     pakageTitle: "Have a nice trip",
-//     price: 200,
-//     items:[
-//         "lotion","notebook","socks"
-//     ]
-// }
-
-// console.log(airbnb.expensive)
-// console.log(airbnb.price)
-
+// ageDiscount()
