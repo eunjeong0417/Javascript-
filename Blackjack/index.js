@@ -12,9 +12,12 @@ let hasBlackJack = false
 let isAlive = true
 let message = ""
 
+//1에서 13까지의 숫자를 랜덤으로 가져오기
 function getRandomCard () {
-    return 5
+    let randomNum = Math.floor(Math.random() * 13 + 1)
+    return randomNum
 }
+
 
 
 function newCard () {
@@ -53,76 +56,98 @@ function renderGame () {
         messageEl.textContent = message
         sumEl.textContent = "Sum:"+" "+ sum
 }
-// +=을 쓰면 기존 텍스트에 덧붙여진다 따라서 새로운
-// text를 반환하도록 만드려면 = 만 사용한다
+// // +=을 쓰면 기존 텍스트에 덧붙여진다 따라서 새로운
+// // text를 반환하도록 만드려면 = 만 사용한다
 
 
-//Array 만들기
+// //Array 만들기
 
-// let featuredPosts = [
-//     "Check my netflix",
-//     "my project",
-//     "my portFolio"
-// ]
+// // let featuredPosts = [
+// //     "Check my netflix",
+// //     "my project",
+// //     "my portFolio"
+// // ]
 
-// console.log(featuredPosts.length)
+// // console.log(featuredPosts.length)
 
-// let cards = [4, 7]
+// // let cards = [4, 7]
 
-// //배열에 추가할때는 push 사용
-// cards.push(6)
-// console.log(cards)
+// // //배열에 추가할때는 push 사용
+// // cards.push(6)
+// // console.log(cards)
 
-// let messages = [
-//     "hello",
-//     "nice to meet you",
-//     "thank you"
-// ]
+// // let messages = [
+// //     "hello",
+// //     "nice to meet you",
+// //     "thank you"
+// // ]
 
-// let newMessage = "All good"
+// // let newMessage = "All good"
 
-// // messages.push(newMessage)
+// // // messages.push(newMessage)
+// // // console.log(messages)
+
+// // //pop을 사용하면 배열의 마지막 항목 삭제
+// // messages.pop()
 // // console.log(messages)
 
-// //pop을 사용하면 배열의 마지막 항목 삭제
-// messages.pop()
-// console.log(messages)
+// //for
 
-//for
+// // for (let count = 10; count < 21; count += 1) {
+// //     console.log(count)
+// // }
 
-// for (let count = 10; count < 21; count += 1) {
-//     console.log(count)
+// // for (let i = 10; i < 101; i += 10 ) {
+// //     console.log(i)
+// // }
+
+// // let cards = [7, 3, 4]
+
+// // for (i = 0;  i < cards.length; i++ ) {
+// //     console.log(cards[i])
+// // }
+
+// // let sentence = ["hello", "my", "name", "is", "eunjeong"]
+// // let greetingEl = document.getElementById('greeting-el')
+
+// // for ( let i = 0;  i < sentence.length; i ++) {
+// //     greetingEl.textContent +=" " + sentence[i] + " "
+// // }
+
+// // let player1Time = 102
+// // let player2Time = 107
+
+// // function totalRace () {
+// //     if ( player1Time < player2Time) {
+// //         return player2Time
+// //     } else if ( player1Time > player2Time) {
+// //         return player1Time
+// //     } else {
+// //         return player1Time
+// //     }
+// // } 
+
+// // let newTotalValue = totalRace()
+// // console.log(newTotalValue)
+
+//randomNumber
+
+// let randomNumber = Math.random() * 6
+
+// console.log(randomNumber)
+
+//Flooring the numbe with Math.random()
+//floor는 소수점 아래 숫자를 제거해준다
+
+// let floorNumber = Math.floor(5.85632)
+// console.log(floorNumber)
+
+//1에서 6 사이의 랜덤 숫자 만들기
+// let randomNumber = Math.floor(Math.random() * 6) + 2
+// console.log(randomNumber)
+
+// function rollDice () {
+//     let randomNumber = Math.floor(Math.random() * 6 + 1 )
+//     return randomNumber
 // }
-
-// for (let i = 10; i < 101; i += 10 ) {
-//     console.log(i)
-// }
-
-// let cards = [7, 3, 4]
-
-// for (i = 0;  i < cards.length; i++ ) {
-//     console.log(cards[i])
-// }
-
-// let sentence = ["hello", "my", "name", "is", "eunjeong"]
-// let greetingEl = document.getElementById('greeting-el')
-
-// for ( let i = 0;  i < sentence.length; i ++) {
-//     greetingEl.textContent +=" " + sentence[i] + " "
-// }
-
-// let player1Time = 102
-// let player2Time = 107
-
-// function totalRace () {
-//     if ( player1Time < player2Time) {
-//         return player2Time
-//     } else if ( player1Time > player2Time) {
-//         return player1Time
-//     } else {
-//         return player1Time
-//     }
-// } 
-
-// let newTotalValue = totalRace()
-// console.log(newTotalValue)
+// console.log(rollDice ())
