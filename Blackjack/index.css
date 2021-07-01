@@ -24,11 +24,12 @@ span {
   font-style: italic;
 }
 
-#message-card {
+#cards-el {
   margin-bottom: 0.5em;
 }
 
-#startBtn {
+#startBtn,
+#newBtn {
   border: none;
   font-size: 1em;
   font-weight: bold;
@@ -41,7 +42,8 @@ span {
   cursor: pointer;
 }
 
-#startBtn:hover {
-  background-color: rgb(196, 141, 4);
+#startBtn:hover,
+#newBtn:hover {
+  background-color: rgb(224, 173, 43);
   color: #0fb359;
 }
