@@ -13,11 +13,18 @@ let isAlive = true
 let message = ""
 
 //1에서 13까지의 숫자를 랜덤으로 가져오기
+//random 으로 가져온 숫자가 10보다 크면 10으로 리턴
+//random으로 가져온 숫자가 1이면 11로 리턴한다
 function getRandomCard () {
-    let randomNum = Math.floor(Math.random() * 13 + 1)
-    return randomNum
+    let randomNum = Math.floor(Math.random() * 13) + 1
+    if ( randomNum > 10) {
+        return 10
+    } else if ( randomNum === 1 ) {
+        return 11
+    } else {
+        return randomNum 
+    }
 }
-
 
 
 function newCard () {
