@@ -3,14 +3,14 @@ let messageEl = document.getElementById('message-el')
 let sumEl = document.getElementById('sum-el')
 let cardsEl = document.getElementById('cards-el')
 //뽑는 모든 카드를 가져오기 위해 배열을 만든다
-let firstCard = getRandomCard ()
-let secondCard = getRandomCard ()
-let cards = [firstCard, secondCard] 
+let cards = [] 
 //Arrays - ordered lists of items
-let sum = firstCard + secondCard 
+let sum = 0
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false
+//게임에 들어가기 전 상태는 false로 설정
 let message = ""
+console.log(cards)
 
 //1에서 13까지의 숫자를 랜덤으로 가져오기
 //random 으로 가져온 숫자가 10보다 크면 10으로 리턴
@@ -37,6 +37,12 @@ function newCard () {
 btnClicked.addEventListener('click', startGame)
 
 function startGame () {
+    let firstCard = getRandomCard ()
+    let secondCard = getRandomCard ()
+    cards = [firstCard,secondCard]
+    sum = firstCard + secondCard
+    isAlive = true
+    console.log(cards)
     renderGame()
 }
 
