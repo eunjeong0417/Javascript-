@@ -127,26 +127,26 @@
 // }
 
 //조건문 연습하기
-let firstCard = 10
-let secondCard = 13
-let sum = firstCard + secondCard
-let hasBlackJack = false
-let isAlive = true
-let message = ""
+// let firstCard = 10
+// let secondCard = 13
+// let sum = firstCard + secondCard
+// let hasBlackJack = false
+// let isAlive = true
+// let message = ""
 
 
-if ( sum <= 20  ) {
-    message = "Do you want to draw a new card?"
-} else if ( sum === 21) {
-    message = "you've got Blackjack!"
-    hasBlackJack = true
-} else {
-    console.log("You're out of the game!")
-    isAlive = false
-    message = "we're logging out"
-}
+// if ( sum <= 20  ) {
+//     message = "Do you want to draw a new card?"
+// } else if ( sum === 21) {
+//     message = "you've got Blackjack!"
+//     hasBlackJack = true
+// } else {
+//     console.log("You're out of the game!")
+//     isAlive = false
+//     message = "we're logging out"
+// }
 
-console.log(message)
+// console.log(message)
 //마지막 else에는 sum이 21보다 작거나 21과 같은 경우를
 //제외한 모든 경우를 가정한다
 
@@ -172,3 +172,39 @@ console.log(message)
 //     console.log("Not elegible, you have already gotten one")
 // }
 
+//for문 연습
+
+// let largestCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+
+// console.log("The 5 largeset countries in the world:")
+// for (let i = 0; i < largestCountries.length; i++) {
+//     console.log("-"+" " + largestCountries[i])
+// }
+
+// let largestCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+// largestCountries.pop()
+// console.log(largestCountries)
+// largestCountries.shift()
+// console.log(largestCountries)
+// largestCountries.unshift("China")
+// console.log(largestCountries)
+// largestCountries.push("Pakistan")
+// console.log(largestCountries)
+
+//논리연산자
+
+// let dayOfMonth = 31
+// let weekday ="Friday"
+
+// if ( dayOfMonth === 13 && weekday === "Friday") {
+//     console.log("😢")
+// } else if ( dayOfMonth === 31 && weekday === "Friday") {
+//     console.log("😊")
+// }
+
+let randomNumber = Math.floor(Math.random()*3)
+
+let hands = ["rock", "paper", "scissor"]
+
+console.log(hands[randomNumber])
