@@ -203,8 +203,26 @@
 //     console.log("😊")
 // }
 //0~2.999999
-let randomNumber = Math.floor(Math.random()*3)
+// let randomNumber = Math.floor(Math.random()*3)
 
-let hands = ["rock", "paper", "scissor"]
+// let hands = ["rock", "paper", "scissor"]
 
-console.log(hands[randomNumber])
+// console.log(hands[randomNumber])
+
+// let fruit = ["🍎", "🍋", "🍎", "🍎", "🍋"]
+// let appleShelf = document.getElementById('apple-shelf')
+// let orangeShelf = document.getElementById('orange-shelf')
+
+// function randomFruit () {
+//     for ( let i = 0; i < fruit.length; i ++) {
+//         if ( fruit[i] === "🍎" ) {
+//             appleShelf.textContent += "🍎"
+//             console.log(appleShelf)
+//         } else {
+//             orangeShelf.textContent += "🍋"
+//             console.log(orangeShelf)
+//     }
+// }
+// }
+
+// randomFruit()
