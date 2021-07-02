@@ -202,7 +202,7 @@
 // } else if ( dayOfMonth === 31 && weekday === "Friday") {
 //     console.log("😊")
 // }
-
+//0~2.999999
 let randomNumber = Math.floor(Math.random()*3)
 
 let hands = ["rock", "paper", "scissor"]
