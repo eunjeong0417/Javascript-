@@ -49,22 +49,22 @@ function render (leades) {
 
 
 // //double click 이벤트는 dblclick
-// deleteEl.addEventListener('dblclick', () => {
-//     localStorage.clear()
-//     myLeads = ""
-//     ulEl.innerHTML = ""
-//     console.log(myLeads)
-// })
+deleteEl.addEventListener('dblclick', () => {
+    localStorage.clear()
+    myLeads = ""
+    ulEl.innerHTML = ""
+    console.log(myLeads)
+})
 
-// inputBtn.addEventListener('click', () => {
-//     myLeads.push(inputEl.value)
-//     inputEl.value = ""
-// //save input 버튼을 클릭하면 input의 value를
-// //myLeads 배열에 push하고
-// //renderLeads함수 호출
-//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
-//     render(myLeads);
-// })
+inputBtn.addEventListener('click', () => {
+    myLeads.push(inputEl.value)
+    inputEl.value = ""
+//save input 버튼을 클릭하면 input의 value를
+//myLeads 배열에 push하고
+//renderLeads함수 호출
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render(myLeads);
+})
 
 
 
