@@ -7,6 +7,16 @@ let listItems = ""
 // localStorage.setItem("myLeads", "www.naver.com")
 // console.log(localStorage.getItem("myLeads"))
 const obj = JSON.parse(localStorage.getItem("myLeads"))
+const saveBtn = document.getElementById('tab-btn')
+
+const tabs = [
+    {url: "https://www.naver.com"}
+]
+
+saveBtn.addEventListener('click', () => {
+    console.log(tabs[0].url)
+})
+
 
 if (obj) {
     myLeads = obj 
