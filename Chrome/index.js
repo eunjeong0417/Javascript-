@@ -10,11 +10,13 @@ const obj = JSON.parse(localStorage.getItem("myLeads"))
 const saveBtn = document.getElementById('tab-btn')
 
 const tabs = [
-    {url: "https://www.naver.com"}
+    {url: "https://www.second.com"}
 ]
 
 saveBtn.addEventListener('click', () => {
-    console.log(tabs[0].url)
+    myLeads.push(tabs[0].url)
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render (myLeads)
 })
 
 
@@ -46,23 +48,23 @@ function render (leades) {
 
 
 
-//double click 이벤트는 dblclick
-deleteEl.addEventListener('dblclick', () => {
-    localStorage.clear()
-    myLeads = ""
-    ulEl.innerHTML = ""
-    console.log(myLeads)
-})
+// //double click 이벤트는 dblclick
+// deleteEl.addEventListener('dblclick', () => {
+//     localStorage.clear()
+//     myLeads = ""
+//     ulEl.innerHTML = ""
+//     console.log(myLeads)
+// })
 
-inputBtn.addEventListener('click', () => {
-    myLeads.push(inputEl.value)
-    inputEl.value = ""
-//save input 버튼을 클릭하면 input의 value를
-//myLeads 배열에 push하고
-//renderLeads함수 호출
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render(myLeads);
-})
+// inputBtn.addEventListener('click', () => {
+//     myLeads.push(inputEl.value)
+//     inputEl.value = ""
+// //save input 버튼을 클릭하면 input의 value를
+// //myLeads 배열에 push하고
+// //renderLeads함수 호출
+//     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+//     render(myLeads);
+// })
 
 
 
@@ -132,3 +134,66 @@ inputBtn.addEventListener('click', () => {
 //             //arguments 인자
 // let a = getFirst(["apple","orange", "clock"])
 // console.log(a)
+
+// const player = "Per"
+// const opponent = "Nick"
+// const game = "Amazing"
+
+// let points = 0
+// let hasWon = false
+
+// //Playing the game
+// points += 100
+// hasWon = false
+
+// if(hasWon) {
+//     console.log(`${player} got ${points} points and won the ${game} game!`)
+// } else {
+//     console.log(`The winner is ${opponent} !  ${player} lost the game`)
+// }
+
+// let myCourses = ["Animation", "UI Design", "Clean Code"]
+
+//                     //parameter 매개변수
+// function arrFunction (arr) {
+//      for( let i = 0; i < arr.length; i++) {
+//          console.log(arr[i])
+//      }
+// }
+
+// arrFunction(myCourses)
+//        //argument(인자)로 myCourses 배열을 넣는다
+
+// localStorage.setItem("practice", "Saving to localStorage")
+// let storage = localStorage.getItem("practice")
+// console.log(storage)
+
+// let data = [
+//     {
+//         player:"Jane",
+//         score: 52
+//     },
+//     {
+//         player: "Tim",
+//         score: 100
+//     }
+// ]
+
+// const scBtn = document.getElementById('log-btn')
+
+// scBtn.addEventListener('click', () => {
+//     console.log(data[0].score) 
+// })
+
+
+// function generateSentence(desc,arr) {
+//     return `The ${arr.length} ${desc} are ${arr}` 
+// }
+
+// console.log(generateSentence("largest countries", ["China", "India", "USA"]))
+
+// console.log(generateSentence("best fruits", ["Apples", "Bananas"]))
+
+
+
+
