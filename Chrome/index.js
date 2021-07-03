@@ -2,7 +2,7 @@ let inputBtn = document.getElementById('input-btn')
 let myLeads = []
 const inputEl = document.getElementById('input-el')
 const ulEl = document.getElementById('ul-el')
-let deleteEl = document.getElementById('delete-btn')
+const deleteEl = document.getElementById('delete-btn')
 let listItems = ""
 // localStorage.setItem("myLeads", "www.naver.com")
 // console.log(localStorage.getItem("myLeads"))
@@ -10,9 +10,30 @@ const obj = JSON.parse(localStorage.getItem("myLeads"))
 
 if (obj) {
     myLeads = obj 
-    renderLeads ()
+    render (myLeads)
 }
+//parameter로 myLeads를 render함수에 전달
 console.log(myLeads)
+
+//template literal
+function render (leades) {
+    let listItems = ""
+    for( let i = 0; i < leades.length; i++) {
+         listItems += `
+         <li>
+                <a target='_blank'
+                    href='${leades[i]}'>
+                ${leades[i]}
+            </a>
+         </li>
+         `
+    }
+    ulEl.innerHTML = listItems
+}
+
+
+
+
 
 //double click 이벤트는 dblclick
 deleteEl.addEventListener('dblclick', () => {
@@ -29,26 +50,8 @@ inputBtn.addEventListener('click', () => {
 //myLeads 배열에 push하고
 //renderLeads함수 호출
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    console.log(localStorage.getItem("myLeads"))
-    renderLeads()
+    render(myLeads);
 })
-
-//template literal
-function renderLeads () {
-    let listItems = ""
-    for( let i = 0; i < myLeads.length; i++) {
-        listItems += `
-         <li>
-                <a target='_blank'
-                    href='${myLeads[i]}'>
-                ${myLeads[i]}
-            </a>
-         </li>
-         `
-        
-    }
-    ulEl.innerHTML = listItems
-}
 
 
 
