@@ -13,17 +13,7 @@
 
 - 로그인 화면 디자인은 bootstrap을 사용했습니다
 
-✌ react router / map
+![5-1](https://user-images.githubusercontent.com/82692118/124376968-6def8500-dce4-11eb-9d27-99d6394a2681.png)
+![5-2](https://user-images.githubusercontent.com/82692118/124376971-7051df00-dce4-11eb-9889-1d2d39dd2928.png)
+![5-3](https://user-images.githubusercontent.com/82692118/124376974-721ba280-dce4-11eb-9d90-8d9eae4b8c02.png)
 
-![3](https://user-images.githubusercontent.com/82692118/124376553-7a72de00-dce2-11eb-8383-71a5b076e1f7.png)
-
-- bootstrap을 활용해서 navbar를 만들고 reacr router로 페이지간 이동이 가능하게 만들었습니다 
-
-
-✌ Album Maker
-
-![1](https://user-images.githubusercontent.com/82692118/124376409-dc7f1380-dce1-11eb-9f75-16927e1b3b32.png)
-![2](https://user-images.githubusercontent.com/82692118/124376421-e6a11200-dce1-11eb-9bd7-7e99861be7ad.png)
-
-- 포토 앨범 메이커 화면입니다
-- 제목, 날짜 등을 입력해서 사진과 함께 추가하고 삭제할 수 있습니다
