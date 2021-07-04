@@ -2,10 +2,9 @@
 
 ✔ 주요 기능
 
-## Login
-![login](https://user-images.githubusercontent.com/82692118/123038636-c04ebd00-d42b-11eb-8683-8472c0017b00.png)
+![5](https://user-images.githubusercontent.com/82692118/124376858-eace2f00-dce3-11eb-8bc3-c30fd24c2763.png)
 
-✌ firebase / bootstrap
+✌ 
 
 - firebase로 로그인 기능을 만들었습니다.
 
