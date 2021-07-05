@@ -226,3 +226,28 @@
 // }
 
 // randomFruit()
+
+//call back
+
+// function one(call) {
+//     call()
+//     console.log( "step 1")
+// }
+
+// function two() {
+//     console.log( "step 2")
+// }
+
+// one(two)
+
+// let order = () => {};
+
+// let production = () => {};
+
+// let stocks = {
+//     Fruits : [asdfasd]
+// }
+
+setTimeout(() => {
+    console.log('callback function ')
+}, 5000)

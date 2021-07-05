@@ -11,9 +11,11 @@ btns.forEach(function(btn) {
     btn.addEventListener('click', function(e){
         const btnClass = e.currentTarget.classList;
         if(btnClass.contains("decrease")) {
+//if(btnClass.contains("decrease"))
             count = count - 1
         }
         else if (btnClass.contains("reset")) {
+//else if (btnClass.contains("reset"))
             count = 0
         } else {
             count = count + 1

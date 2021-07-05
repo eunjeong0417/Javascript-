@@ -51,6 +51,7 @@ btnClicked.addEventListener('click', startGame)
 
 randomNumber = Math.floor(Math.random() * 6) + 1
 
+
 function startGame () {
     let firstCard = getRandomCard ()
     let secondCard = getRandomCard ()
