@@ -1,3 +1,7 @@
+#apple-shelf {
+  margin-top: 10em;
+}
+
 /* body {
   background-image: url("station.jpg");
   background-size: cover;
@@ -46,6 +50,24 @@ button {
   background-color: red;
 } */
 
-h1 {
-  color: goldenrod;
+* {
+  margin: 0 0;
+}
+
+div {
+  margin-left: 0;
+  margin-top: 0;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: bisque;
+}
+
+.special {
+  margin-left: 0;
+  margin-top: 0;
+  border: 2px solid black;
+  height: 82.4px;
+  width: 100px;
+  background-color: darkred;
 }

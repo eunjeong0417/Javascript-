@@ -1,3 +1,15 @@
+const specialEl = document.querySelector('.special')
+
+//event에는 항상 event object가 전달된다
+specialEl.addEventListener('click', (e) => {
+    const rect = specialEl.getBoundingClientRect();
+    console.log(rect)
+    console.log(`page : ${e.pageX}, ${e.pageY}  client : ${e.clientX}, ${e.clientY}`)
+    // pageX, pageY는 화면 전체의 x,y축 길이
+    // clientX, clientY는 사용자에게 보여지는 브라우저
+    //화면의 x,y축 길이
+})
+
 
 // //counter app 만들기
 
@@ -248,6 +260,6 @@
 //     Fruits : [asdfasd]
 // }
 
-setTimeout(() => {
-    console.log('callback function ')
-}, 5000)
+// setTimeout(() => {
+//     console.log('callback function ')
+// }, 5000)
