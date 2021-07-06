@@ -54,6 +54,12 @@ button {
   margin: 0 0;
 }
 
+section {
+  position: fixed;
+  margin-top: 1em;
+  right: 1em;
+}
+
 div {
   margin-left: 0;
   margin-top: 0;

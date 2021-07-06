@@ -1,4 +1,6 @@
 const specialEl = document.querySelector('.special')
+const btnEl = document.getElementById('btn')
+const up = document.getElementById('up')
 
 //event에는 항상 event object가 전달된다
 specialEl.addEventListener('click', (e) => {
@@ -9,7 +11,16 @@ specialEl.addEventListener('click', (e) => {
     // clientX, clientY는 사용자에게 보여지는 브라우저
     //화면의 x,y축 길이
 })
+//window API들
+   btnEl.addEventListener('click', () => {
+        window.scrollBy(0,50)
+   })
+   //scrollBy는 Y축, 아래로 이동
 
+   up.addEventListener('click', () => {
+    specialEl.scrollIntoView();
+   })
+//scrollIntoView로 해당 element로 바로 이동
 
 // //counter app 만들기
 
